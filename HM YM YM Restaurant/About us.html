@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About us</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/jquery-3.2.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<body id="body">
+	
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <a class="navbar-brand" href="project it.html" target="_blank">HM YM YM</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+    
+      <li class="nav-item">
+        <a class="nav-link" href="menu.html" target="_blank">Menu</a>
+      </li>
+         
+      <li class="nav-item">
+        <a class="nav-link" href="Contact.html" target="_blank">Contact us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Services.html" target="_blank">Services</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="Blog.html" target="_blank">News</a>
+      </li>
+
+
+      
+    </ul>
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Font Theme
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" onclick="changeFontBold()">Bold</a>
+    <a class="dropdown-item" onclick="changeFontItalic()">Italic</a>
+    
+  </div>
+</div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Background Theme
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" onclick="myFunction();" id="DLMode">Dark Mode</a>
+    
+    
+  </div>
+</div>
+
+  
+
+  </div>
+</nav>
+	
+	<div class="container">
+	<h1 style="margin-top: 50px;color:#e84a5f;">HM YM YM Restaurant
+
+	</h1>
+	<center>
+	<video width="800" controls>
+		  <source src="Videos/res.mp4" type="video/mp4">
+		  Your browser does not support HTML video.
+	</video></center>
+	<p>Founded in 1998, Guangzhou Sanhe Decoration Design Co., Ltd. adheres to the design concept of Limited Space & Unlimited Creativity, is committed to the professional design and commercial planning of hotel, restaurants, noble villas, office buildings, entertainment and leisure clubs and other commercial spaces. We have successively won many awards in China's national, provincial and municipal design competitions. Through the efforts of all employees, we have obtained the "Consumer Relax Enterprise in 2003, Consumer Satisfaction Unit of Guangdong Province in 2004, Honesty Enterprise of Decoration Industry in 2005, Famous Decoration Company in Guangzhou, Guangzhou Environmental Protection & Declaration Enterprise and other special honors; became Member Unit of China Architectural Decoration Association, Member Unit of Guangdong Decoration Industry Association, South China Executive Director Unit of IFDA International Decoration Association, Best Honesty Enterprise in Guangdong, Executive Director Unit of Guangdong Credit Association, and won the title of Trustworthy Enterprise in Guangdong for four consecutive years. Architectural decoration engineering design B and construction grade II qualifications issued by Guangdong Provincial Department of Housing and Urban-Rural Development.
+
+	<a href="#" id="readMoreId" >Read more</a>
+	<p id="moreP">We have a group of designers with deep artistic background, creative desire and vigor. The accumulation of history and many outstanding talents make Sanhe more vigorous. Relying on the scientific management and technical strength, we continue to grow. We have branches in many provinces and cities in China, and have had good cooperative relations with customers in many countries in the world, thus winning the good word-of-mouth of customers from all over the world. We sincerely hope that more friends and customers can visit us for more understanding, trust, cooperation and decorative business</p>
+
+ 
+</p>
+</div>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+			$("#moreP").hide();
+
+	});
+	$("#readMoreId").click(function(){
+
+			$("#moreP").show();
+			$(this).hide();
+	});
+var currentMode="dark";
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+   if(currentMode=="dark")
+   {
+    document.getElementById("DLMode").innerHTML="Light Mode";
+    currentMode="light";
+  }
+  else
+  {
+        document.getElementById("DLMode").innerHTML="Dark Mode";
+        currentMode="dark";
+
+  }
+
+}
+function changeFontBold()
+{
+	document.getElementById("body").style.fontWeight = "bold";
+}
+function changeFontItalic()
+{
+	document.getElementById("body").style.fontStyle = "italic";
+
+}
+</script>
+
+</body>
+</html>

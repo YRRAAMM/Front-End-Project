@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>submission data form</title>
+   <link rel="stylesheet" type="text/css" href="CSS/form.css"> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+    $(document).ready(function(){
+	   $("input").focus(function(){
+	    $(this).css("background-color","lightgray");
+        });
+	   $("input").blur(function(){
+        $(this).css("background-color","lightblue");
+		});
+	   $(sub).click(function(){
+	    $(content).remove("lightblue");
+	   });
+	  $(sub).mouseup(function(){
+	    alert("Thanks for complete your data.")
+	  });
+    });
+   </script>
+</head>
+<body>
+    <header id="top">
+	  <h1 id="h">Hello Everyone</h1>
+	</header>
+    <section class="form">
+		<img src="images/logo1.jpg">
+        <h2 id="hh">Please enter your data:</h2> 
+      <form>
+	    <label for="uname">UserName :</label><br>	
+	      <input type="text" id="content" name="uname">
+		<br><br>
+	    <label for="email">Email :</label><br>
+		  <input id="content" type="email" name="email">
+		<br><br>
+	    <label for="password">Password :</label><br>
+	      <input id="content" type="password" name="password">
+		<br><br>
+	    <label for="radio">Choose what you want :</label><br>
+	      <input type="radio" name="choice">
+	    <label>Reservation</label><br>
+	      <input type="radio" name="choice">
+	    <label>Order online</label>
+		<br><br>
+		<label for="namber">Credit/Debit Number :</label><br>	
+	      <input id="content" type="number" name="namber"> 
+		<br><br>
+		<label for="password">Credit/Debit Password :</label><br>	
+	      <input id="content" type="password" name="password"> 
+		<br><br><br>
+	      <input type="submit" id="sub" value="submit your data">
+	    <br><br>
+	  <span>you want to create a new account?</span>
+	  <a id="x" href="signup.html" target="_blank">sign up</a>
+    </form>
+   </section>
+   <br><br><br><br><br>
+   <a href="Booking Online.html" class="return">return to Booking Online</a>
+</body>
+</html>

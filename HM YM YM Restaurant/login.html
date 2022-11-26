@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM YM YM</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8"></script>
+    <script>
+        function showpass() {
+            var pass = document.getElementById('pass');
+            if (document.getElementById('checked').checked) {
+                pass.setAttribute('type', 'text');
+            } else {
+                pass.setAttribute('type', 'password');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="project It.html" class="login-form">
+        <h1>login</h1>
+        <figure class="logo">
+            <img src="images/IMG-20200627-WA0002.png" alt="logo" class="logo">
+        </figure>
+        <div class="textb">
+            <input type="text">
+            <span data-placeholder="username"></span>
+        </div>
+        <div class="textb">
+            <input type="password" id="pass" name="pwd" required>
+            <span data-placeholder="password"></span>
+        </div>
+        <div class="showpass">
+            <input type="checkbox" id="checked" onclick="showpass();">
+            <label for="showPwd">show password</label>
+        </div>
+        <a href="project it.html"><input type="submit" class="logbtn" value="login" required></a>
+        <div class="bottom-text">
+            Don't have account? <a href="signup.html" target="_blank">Sign up</a>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        $(".textb input").on("focus", function () {
+            $(this).addClass("focus");
+        });
+        $(".textb input").on("blur", function () {
+            if ($(this).val() == "")
+                $(this).removeClass("focus");
+        });
+    </script>
+    </section>
+</body>
+
+</html>

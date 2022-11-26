@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/Home page.css">
+        <title>Home</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#button").click(function(){
+                    $("#two").slideToggle("slow");
+                });
+            });
+            function over()
+            {
+                document.getElementById("img").src ="images/georgian-restaurant.jpg";
+            }
+            function out()
+            {
+                document.getElementById("img").src ="images/03104.jpg";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="one">
+            <ul>
+                <li>HM YM YM<span>.</span></li>
+                <li><button id="button">Menu</button>
+                <li class="home"><span>Home</span></li>
+                <li><a href="About us.html" target="_blank">About us</a></li>
+                <li><a href="menu.html" target="_blank">Menu</a></li>
+                <li><a href="Blog.html" target="_blank">News</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+        <div id="two">
+            <ul>
+                <li><a href="#one">Welcome</a></li>
+                <li><a href="#fs1">How to eat healthy</a></li>
+                <li><a href="#fs2">Another information</a></li>
+                <li><a href="#img">See Restaurant</a></li>
+                <li><a href="#three">Celebrity opinions</a></li>
+                <li><a href="#five">Our Pages</a></li>
+                <li><img src="images/83fc29db-17f0-4c41-9f1d-8cf6f0ffb139.jpg" width="200px" height="155px"></li>
+            </ul>
+        </div>
+            <p><i>Welcome to HM YM YM<span>.</span></i></p>
+            <ul class="images">
+                <li ><i>HMYMYM</i></li>
+                <li><img src="images/1.jpg"></li>
+                <li><img src="images/3.jpg"></li>
+                <li><img src="images/4.jpg"></li>
+            </ul>
+        <fieldset id="fs1">
+            <legend> <img src="images/22.jpg" width="200px"height="200px"></legend>
+            <blockquote><span> meals regularly:</span> Eating 3 main meals with snacks is known to be one of the effective ways to maintain body energy 
+            and healthy weight, so that they are irregular in eating them, or ignore meals that may lead to a feeling of hunger 
+            significantly, or an example example can Ignoring breakfast should cause large amounts of food during the day.<br>
+            <span>Learn healthy cooking methods:</span> there are some cooking methods that are more healthy than others, and some healthy
+             ingredients can be added during cooking, such as fresh or dried herbs, which can add flavor to the food to be from
+             some unhealthy ingredients.<br>
+            <span>Eating slowly</span>  It is advised to eat when the person is relaxed, which takes one meal at least 20 minutes, 
+             and should stop eating when feeling full, and pay attention to the reason for eating, because some people eat when
+             feeling stressed, sad or bored , Or anger, which does not eat food unless the person feels hungry, as it is advised 
+            to choose foods that make a person feel full naturally, such as fiber</blockquote></fieldset>
+            <fieldset id="fs2">
+                <legend><b>HM YM YM Restaurent</b></legend>
+                <span>Address:</span> 38 Sain Paul st, West Minister, London, England<br>
+                <span>date of establishment of the restaurant:</span> Founded in May 1995<br>
+                <span>Restaurant owner:</span>Natalie Josh<br>
+                <span>The level of service:</span>Fine and high service and we have a staff at a high level of service and there are all foods,
+                 drinks, alcohol, places, and luxury and organized tables.,<br>
+                 We have smokers, seaside areas, tranquility areas, and noisy areas, discos and music<br>
+                 <span>About our Chefs</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <span>You want to make an opinion</span><br>
+                 <button><a href="chefs.html" target="_blank">Chefs</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <button><a href="opinion.html" target="_blank">opinion</a></button><br>
+                 <span>About our Recipes</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <span>About our services</span><br>
+                 <button><a href="Recipe.html" target="_blank">Recipes</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <button><a href="services.html" target="_blank">services</a></button><br>
+                 <span>you want to be healthy</span><br>
+                 <button><a href="be healthy.html" target="_blank">Be Healthy</a></button>
+            </fieldset>
+            <img id="img" onmouseover="over();" onmouseout="out();" src="images/03104.jpg" width="100%" height="90%">
+            <div id="three">
+                <img class="img1" src="images/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_.jpg" width="200px" height="200px">
+                <img  src="images/5-stars-1210x314.jpg" width="200px" height="30px">
+                <p><span>scarlett johansson</span><br>
+                    is a fine restaurant and I like to eat there every day</p>
+            </div>
+            <div class="four">
+                <img  src="images/5-stars-1210x314.jpg" width="200px" height="30px">
+                <img class="img1" src="images/5d01086edaa482138d1d1967.jpg" width="220px" height="200px">
+                <p><span>keanu reeves</span><br>
+                     I want to rest, go to this restaurant and drink coffee</p>
+            </div>
+            <div id="three">
+                <img class="img1" src="images/Emilia_Clarke_by_Gage_Skidmore_2_(cropped).jpg" width="200px" height="200px">
+                <img  src="images/5-stars-1210x314.jpg" width="200px" height="30px">
+                <p><span>emilia clarke</span><br>
+                     beautiful is this restaurant. I love sushi and lots of drinks</p>
+            </div>
+            <div class="four">
+                <img  src="images/5-stars-1210x314.jpg" width="200px" height="30px">
+                <img class="img1" src="images/12019281331556594231864.jpg" width="220px" height="200px">
+                <p><span>will smith</span><br>
+                     the calm in this place</p>
+            </div>
+            <div id="five">
+                <p>Visit our page on</p>
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-iphone-download.jpg" width="40px" height="40px"></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="images/2d8edb28c6792cb00bf850749758d146_XL.jpg" width="40px" height="40px"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/images.jpg" width="40px" height="40px"></a>
+                <a href="https://web.telegram.org/#/login" target="_blank"><img src="images/EVAq-voXQAY03k0.jpg" width="40px" height="40px"></a>
+                <p>HM YM YM resturent</p>
+            </div>
+            <audio autoplay loop>
+                <source src="images/موسيقى هادئة بتقنية 8D ستنسى اسمك.mp3" type="audio/mpeg">
+            </audio>
+    </body>
+</html>

@@ -1,0 +1,196 @@
+body
+{
+    margin: 0px;
+    background-image: url('../images/burger-and-vegetables-placed-on-brown-wood-surface-1565982.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+}
+p
+{
+    text-align: center;
+    margin-top: 250px;
+    font-size: 70px;
+    color: white;
+}
+#one
+{
+    background-color: rgba(0,0,0,0.5);
+    height: 70px;
+    font-size: 25px;
+    padding: 1px;
+}
+#one ul
+{
+    list-style: none;
+    margin-top: 15px;
+}
+#one ul li
+{
+    display: inline;
+    text-align: center;
+    margin: 25px;
+}
+.home
+{
+    padding: 27px;
+    background-color: rgba(0,0,0,0.7);
+}
+button
+{
+    color:orange;
+    background-color: rgba(0,0,0,0.7);
+    width: 100px; 
+    height: 35px;
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#two
+{
+    background-color: rgba(0,0,0,0.5);
+    width: 280px;
+    height: 570px;
+    margin-top: 5px;
+    border-radius: 30px;
+    position: fixed;
+    display: none;
+}
+#two ul
+{
+    list-style: none;
+    font-size: 20px;
+    padding: 30px;
+    margin-top: 7px;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+#two a:hover
+{
+    padding: 5px;    
+}
+#two img:hover
+{
+    width: 210px;
+    height: 160px;
+    border: 2px blueviolet solid;
+}
+a:hover
+{
+    color: orange;
+    background-color:rgba(0,0,0,0.7) ;
+    cursor: pointer;
+    padding: 27px;
+}
+#two img
+{
+    float:left;
+    margin-top: 210px;
+    border-radius: 50%;
+}
+#fs1,#fs2
+{
+    border:7px rgba(0,0,0,0.3) solid;
+    width: 600px;
+    height: 600px;
+    margin: 40px;
+    margin-top: 300px;
+    margin-right: 100px;
+    border-left: none;
+    border-right: none;
+    float:right;
+    font-size: 16px;
+    font-family: cursive;
+    text-align: justify;
+}
+legend
+{
+    text-align: center;
+    font-size: 30px;
+}
+span
+{
+    color: orange;
+}
+.images
+{
+    float: right;
+    margin-top: 400px;
+    list-style: none;
+}
+.images li
+{
+    margin-top: 100px;
+}
+.images li :first-child
+{
+    font-size: 40px;
+    color: rgba(0,0,0,0.5);
+}
+#fs2
+{
+    width: 600px;
+    height: 430px;
+    margin: 60px;
+    margin-right: 100px;
+}
+#fs2 a:hover
+{
+    padding: 0px;
+}
+#three
+{
+    margin: 50px;
+    margin-left: 300px;
+}
+#three p , .four p
+{
+    font-size: 20px;
+    font-family: cursive;
+    color: black;
+    margin-top: 10px;
+    text-align: left;
+}
+.four
+{
+    margin-left: 700px;
+}
+.four p
+{
+    margin-right: 100px;
+}
+.img1
+{
+    border-radius: 50%;
+}
+#five
+{
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+#five p
+{
+    color: rgb(37, 36, 36);
+    font-size: 20px;
+    margin-top: 15px;
+}
+#five img
+{
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+

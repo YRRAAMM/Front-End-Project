@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <title>Booking Online</title>
+  <link rel="stylesheet" type="text/css" href="css/booking.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+    $(document).ready(function(){
+	   $("input").focus(function(){
+	    $(this).css("background-color","DodgerBlue");
+        });
+	   $("input").blur(function(){
+        $(this).css("background-color","MediumSeaGreen");
+		});
+	   $(search).click(function(){
+	    $(content).remove("MediumSeaGreen");
+	   });
+	  $(search).mouseup(function(){
+	    alert("Hello, there is a reservation.");
+	  });
+    });
+   </script>
+</head>
+<body>
+  <section>
+    <section id="content">
+	   <h1>WELCOME TO "HM YM YM RESTAURANT"</h1>
+	   <div><i>Hello Everyone,<br>First, Search to know if there is a reservation on that day or not:
+	   <form>
+		    <label>What day is coming?</label>
+			<input type="date" id="form">
+			<label for="quantity">How many people?</label>
+			<input type="number" id="form" name="quantity" min="0" max="6">
+			<input type="submit" value="Search" id="search">
+		</form>
+		<br>Second, there is a place where smoking is not permitted and a place to smoke.
+		</i><br><br>
+		<span>for presisivition </span>
+		<a href="submission data form.html" class="button" target="_blank">Click here</a>
+		</div>
+	</section>
+	    <img id="slide" src="images/img02.jpg">
+		<div class="inner">
+  </section>
+  <br> <br><br>
+  <section id="file">
+    <section id="content2">
+       <h1>Order food online</h1>
+	   <br>
+	</section>
+	   <br><br><br>
+	     <img id="img2" src="images/img04.jpg">
+		 <span id="x"> Home delivery is available at any time.Just call us on(0100-461-7254)and your order will arrive as soon as possible.<br><br>
+		  And there are some discounts on the types of food :
+		  <a href="Discounts.html" class="button2" target="_blank">Learn More about discounts</a>
+		  <br><br>
+		 <strong>Start your experience:</strong><br>
+         Use our GPS technology to locate yourself, choose your favorite  meal, and checkout.
+	   </span>
+  </section>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <section>
+        <h1 id="a">Endless selection of cuisines</h1><br><br>
+	    <div id="content3">
+		<img id="img3" src="images/img3.jpg">
+		There are many types of foods such as starches, vegetable foods, appetizers and Desserts.
+		<br><br>To know more types of food and the best selling:
+		<a href="best sales.html" class="button2" target="_blank">Best Selling</a>
+		</div>
+  </section>
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <a href="project It.html" class="return" target="_blank">return to Home Page</a>
+</body>
+</html>

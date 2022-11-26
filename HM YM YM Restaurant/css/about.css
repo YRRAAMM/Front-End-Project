@@ -1,0 +1,31 @@
+
+		h1
+		{
+			color: #90303d;
+			text-align: center;
+			font-size: 40px;
+		}
+		img
+		{
+			width: 80%;
+			margin-left: 140px;
+		}
+		p
+		{
+			
+			font-size: 25px;
+		}
+		body
+		{
+			margin: 0;
+			padding: 0;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+				
+
+		}
+		.dark-mode {
+  background-color: black;
+  color: white;
+}
+

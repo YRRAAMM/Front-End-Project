@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Services</title>
+        <link rel="stylesheet" href="css/services.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            function opendiv(){
+                var thediv = document.getElementById("mydiv");
+                thediv.style.transform = "scale(1)";
+            }
+            function closediv(){
+                var thediv = document.getElementById("mydiv");
+                thediv.style.transform = "scale(0)";
+            }
+            function opendiv1(){
+                var thediv = document.getElementById("mydiv1");
+                thediv.style.transform = "scale(1)";
+            }
+            function closediv1(){
+                var thediv = document.getElementById("mydiv1");
+                thediv.style.transform = "scale(0)";
+            }
+            function opendiv2(){
+                var thediv = document.getElementById("mydiv2");
+                thediv.style.transform = "scale(1)";
+            }
+            function closediv2(){
+                var thediv = document.getElementById("mydiv2");
+                thediv.style.transform = "scale(0)";
+            }
+            $(document).ready(function () {
+                $(window).scroll(function(){
+                    if ( $(this).scrollTop() > 50){
+                        $('#scroll').fadeIn();
+                    }else {
+                        $('#scroll').fadeOut();
+                    }
+                    
+                });
+                $('#scroll').on('click', function(){
+                    $('html,body').animate ({
+                        scrollTop : 0
+                    },500);
+                        
+                    });
+
+            });
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="one">
+            <ul>
+                <li><a href="project it.html" target="_blank">HM YM YM.</a></li>
+                <li><a href="Booking Online.html" target="_blank">Booking Online</a></li>
+                <li><a href="About us.html" target="_blank">About us</a></li>
+                <li><a href="menu.html" target="_blank">Menu</a></li>
+                <li><a href="opinion.html" target="_blank">Opinions</a></li>
+                <li><a href="Discounts.html" target="_blank">Discount</a></li>
+                <li><button class="btn" onclick="myFunction()">dark mode</button></li>
+            </ul>
+        </div>
+        <button id="scroll">^</button>
+        <div class="two">
+            <i>Customer service is equal parts communication and genuine attention to your diners. (tweet this) When guests visit your restaurant,
+             you want them to feel welcome. When you treat them with care and respect while providing an excellent meal, they’ll come back to
+              your restaurant again and again</i>
+        </div>
+        <div class="three">
+            <img src="images/the-feast-bloggers-wait-food.jpg" width="500px" height="300px">
+            <h2 onclick="opendiv()">Don’t Make Them Wait</h2>
+        </div>
+        <div class="overlay" id="mydiv">
+            <a href="#" class="close" onclick="closediv()">&times;</a>
+            <img class="img1" src="images/the-feast-bloggers-wait-food.jpg" width="500px" height="300px">
+            <div class="div">
+                You can call this the negative turning point. Remember that it can be hard to win back your disappointed customer.
+                 Avoid disappointing them at all costs. Make sure you have enough staff on hand so they never have to wait too long.
+                  If your diner orders a meal that takes a bit longer to cook, let them know in advance. Be forthcoming and informative.
+            </div>
+        </div>
+        <div class="four">
+            <img src="images/62290-640x360-tipping-ns.jpg" width="500px" height="300px">
+            <h2 onclick="opendiv1()">Fix Problems Immediately</h2>
+        </div>
+        <div class="overlay" id="mydiv1">
+            <a href="#" class="close" onclick="closediv1()">&times;</a>
+            <div class="div2">
+                <p>
+                    make an opinion : <button><a href="opinion.html" target="_blank">Click here </a></button>
+                </p>
+            </div>
+            <img class="img1" src="images/62290-640x360-tipping-ns.jpg" width="500px" height="300px">
+            <div class="div">
+                The most importancce step in delivering excellent customer service is our finesse at dealing with customer problems and
+                 complaints. No matter how hard we try, something is going to go amiss some time or another. Whatever the problem,
+                  our goal is to please the customer.
+            </div>
+        </div>
+        <div class="five">
+            <img src="images/Online-ordering-system-advantages.jpg" width="500px" height="300px">
+            <h2 onclick="opendiv2()">Incorporate Technology</h2>
+        </div>
+        <div class="overlay" id="mydiv2">
+            <a href="#" class="close" onclick="closediv2();">&times;</a>
+            <div class="div2">
+                <p>
+                    For online Services : <button><a href="Booking Online.html" target="_blank">Click here </a></button>
+                </p>
+            </div>
+            <img class="img1" src="images/Online-ordering-system-advantages.jpg" width="500px" height="300px">
+            <div class="div">
+                Online Ordering The ability to instantly order from your online menu provides easy access for your customers.
+                 It allows them to conveniently browse and then order from your menu.
+            </div>
+        </div>
+        <div id="six">
+            <p>Visit our page on</p>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-iphone-download.jpg" width="40px" height="40px"></a>
+            <a href="https://www.whatsapp.com/" target="_blank"><img src="images/2d8edb28c6792cb00bf850749758d146_XL.jpg" width="40px" height="40px"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/images.jpg" width="40px" height="40px"></a>
+            <a href="https://web.telegram.org/#/login" target="_blank"><img src="images/EVAq-voXQAY03k0.jpg" width="40px" height="40px"></a>
+            <p>HM YM YM resturent</p>
+        </div>
+
+    </body>
+</html>

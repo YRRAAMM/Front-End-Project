@@ -1,0 +1,45 @@
+body{background-image:url("../images/taco.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-attachement:fixed;}
+
+h1{font-size:60px;
+color:white;
+text-align:center;}
+li {display:inline-block;padding-right:22px;padding-left:200px;}
+ul{float:right;padding-right:25px;}
+
+#size{
+font-size:30px;
+color:white;
+font-size:50px;
+}
+#button{
+color:white;
+width:100px;
+background-color:rgba(0,0,0,0.1);}
+h2{text-align:center;
+color:black;font-size:70px;
+ }
+.c{font-color:blue;}
+
+table{border-bottom:1px solid white;}
+
+a:link{text-decoration:none;color:red;}
+a:visited{color:yellow;}
+a:hover{text-decoration:underline;}
+a:active{font-size:120%;}
+
+input[type="email"]{color:white;
+background-color:rgba(0,0,0,0.1);}
+
+input[type="text"]{color:white;
+background-color:rgba(0,0,0,0.1);}
+
+textarea{color:white;
+background-color:rgba(0,0,0,0.1);overflow-y:hidden;}
+
+
+input [type="radio"]{color:white;
+background-color:rgba(0,0,0,0.1);}
+
